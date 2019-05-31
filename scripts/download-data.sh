@@ -1,0 +1,1 @@
+dynamodump export-all-data --region=$AWS_REGION
