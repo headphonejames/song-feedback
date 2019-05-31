@@ -79,8 +79,6 @@ I named it _song-feedback_. Grant it _Programmatic access_. Add it to the _admin
 * Make sure you have [npm](https://www.npmjs.com/get-npm) installed.
 * Clone this repo:
  `git clone https://generalfuzz@bitbucket.org/generalfuzz/song-feedback.git`
-* Checkout the aws branch: `git checkout aws-polling`
-
 * Configure the .env file in the root directory with your AWS configuration.
  
   The DB_ROOT_PATH is used to define the prefix for all db table names. You can leave it as _"song-feedback"_.
