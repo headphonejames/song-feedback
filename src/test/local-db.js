@@ -10,7 +10,6 @@ import {decodeEmptyStr} from "../util";
 
 let AWS = require('aws-sdk');
 
-
 const addDyanamoDBToLocalStorage = (key, data) => {
     if (localStorage.getItem(key) !== undefined) {
         let newTableData = {};

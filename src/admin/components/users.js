@@ -16,19 +16,7 @@ class Users extends Component {
             return <Loading/>;
         }
 
-
-        // let data = [];
         let userCount = Object.keys(users).length;
-        // let totalTime = 0;
-
-        // # ignored tutorial?
-
-
-        // -- restrict charts to time periods
-        // number of users per date
-        // number that returned
-        // # listening now, what they are listening to
-
 
         let total_listen_time = 0;
         let total_number_of_rated_tracks = 0;
@@ -121,12 +109,6 @@ class Users extends Component {
             }]
         };
 
-        // for (let user in users) {
-        //     if (user.hasOwnProperty(user)) {
-        //
-        //
-        //     }
-        // }
         let total_user_count = 0;
         let passed_welcome_count = 0;
         let left_notes = 0 ;
@@ -288,7 +270,6 @@ class Users extends Component {
 
 
             </div>
-            {/* End tracks container */}
         </div>;
 
 

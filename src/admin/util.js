@@ -3,7 +3,6 @@ const color_set = ["#A682FF","#F2D1C9","#715AFF","#8BB174","#D8315B","#8332AC","
 export const addColor = (dataset) => {
     let color_index = 0;
     for (let i = 0; i < dataset.data.length; i++) {
-        // eric - new color index code
         if (color_index > color_set.length - 1) {
             color_index = 0;
         }

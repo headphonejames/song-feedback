@@ -121,15 +121,4 @@ export const deleteNote = async (userId, trackId) => {
     ratingData[userId]["notes"] = "";
     await db.setItem(constants.ratings_path, trackId, ratingData);
 
-    // await db.updateItem(constants.users_path, userId, )
-    // // delete in two places
-    // let expr = "SET ratings.#trackId.notes = :val";
-    // let exprNames = {"#trackId": trackId};
-    // let exprValues = {":val" : mainDb.EMPTY_STR};
-    //
-    // await db.updateItem(constants.users_path, userId, expr, exprNames, exprValues, null);
-    //
-    // expr = "SET #userId.notes = :val";
-    // exprNames = {"#userId": userId};
-    // await db.updateItem(constants.ratings_path, trackId, expr, exprNames, exprValues, null);
 };

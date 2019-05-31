@@ -10,10 +10,6 @@ import {HorizontalBar} from 'react-chartjs-2';
 import {withRouter} from "react-router-dom"
 
 class Tracks extends Component {
-    // avg listen time
-    // tracks with the greatest range
-    // video of ratings over time
-
     render = () => {
         let {tracks, ratings, users} = this.props.databaseAdminReducer;
 

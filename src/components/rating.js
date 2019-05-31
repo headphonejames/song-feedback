@@ -9,7 +9,6 @@ let Rating = require('react-rating');
 
 class RatingComponent extends Component {
 
-
     render = () => {
         let {userData} = this.props.databaseReducer;
         let rateValue = 0;
@@ -33,13 +32,6 @@ class RatingComponent extends Component {
 }
 
 const mapStateToProps = (store) => {
-    // return {
-    //     rating: store.rating,
-    //     track: store.track,
-    //     userId: store.userId,
-    //     ratingEnabled: store.ratingEnabled,
-    //     currentTime: store.currentTime
-    // };
     return store;
 };
 

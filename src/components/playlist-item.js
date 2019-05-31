@@ -9,7 +9,6 @@ let Rating = require('react-rating');
 
 class PlaylistItem extends Component {
 
-
     isPlaying = () => {
         let {playing} = this.props.trackReducer;
         return playing !== undefined && playing;

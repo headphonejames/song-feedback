@@ -16,20 +16,6 @@ export const getCounts = () => {
     return db.getItems(constants.counts_path);
 };
 
-
-
-/*
-"artwork_url" : "https://gfuzz-album9.s3.amazonaws.com/holding%20space.jpg?AWSAccessKeyId=AKIAJPF2YZ3TTJ3NCKUQ&Expires=1544905409&Signature=scbAKkyietciBpgoa9wZUPmhLiI%3D",
-    "duration" : 319.09093,
-    "filename" : "holding space.wav",
-    "id" : "holding space",
-    "image" : "holding space.jpg",
-    "listenedTo" : false,
-    "song_url" : "https://gfuzz-album9.s3.amazonaws.com/holding%20space.wav?AWSAccessKeyId=AKIAJPF2YZ3TTJ3NCKUQ&Expires=1544905409&Signature=s5E1jb1xacIgWR5fftQHUlnc2f4%3D",
-    "timestamp" : 1544894296109,
-    "title" : "holding space"
-*/
-
 // rating methods
 export const update_rating_data = async (userId, trackId, ratingData) => {
     // two places this needs to be set

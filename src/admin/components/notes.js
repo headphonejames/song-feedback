@@ -9,9 +9,6 @@ import * as async from "../actions/async";
 
 
 class Notes extends Component {
-    // list all notes for tracks:
-
-
     deleteNote = (userId, trackId, trackName, text) => {
         this.props.deleteNote(userId, trackId, trackName, text);
     };

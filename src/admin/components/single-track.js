@@ -9,9 +9,6 @@ import * as admin_util from "../util";
 import {Bar} from 'react-chartjs-2';
 
 class SingleTrack extends Component {
-    // tracks with the greatest range
-    // video of ratings over time
-
     render = () => {
         let {tracks, ratings, users} = this.props.databaseAdminReducer;
 

@@ -255,8 +255,6 @@ class Player extends Component {
             count++;
             trackId = userData.playlist[i].id;
             let trackData = userData.ratings[trackId];
-            // if the track isn't rated
-
             // if unrated track - or its re-added to playlist after all tracks in playlist have already been rated
             if (util.isUnrated(trackData) || !userData.playlist[i][constants.listenedTo]) {
                 // if current track hasn't been rated, add modal
@@ -275,7 +273,6 @@ class Player extends Component {
         // everything has played
         userData.finished = true;
         this.setState({play_button: constants.PLAY});
-        // reset counter?
         this.props.updateUser(userId, userData);
     };
 
